@@ -1,8 +1,10 @@
+// https://leetcode.com/problems/monotonic-array/
 public class isMonotonic{
 	
 	public static void main(String[] args){
 		
-		int[] A = {1, 3, 0};
+		int[] A = {1, 2, 2, 3}; // true
+		//int[] A = {1, 3, 0}; // false
 		boolean isIncreasing = false;
 		boolean isDecreasing = false;
 				
@@ -25,6 +27,5 @@ public class isMonotonic{
 		System.out.println( isIncreasing & isDecreasing ? false : true );
 		
 	}
-	
 	
 }
