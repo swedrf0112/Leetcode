@@ -7,9 +7,9 @@ public class isMonotonic_v1{
 		int[] A = {1, 2, 2, 3}; // true
 		//int[] A = {1, 3, 0}; // false
 		
-        /*
+		/*
 		(1) 若是單調遞增/單調遞減的序列, 則 isIncreasing/isDecreasing 兩個狀態只會有一個成立
-        (2) 相等不考慮
+		(2) 相等不考慮
 		*/
 		
 		boolean isIncreasing = false;
