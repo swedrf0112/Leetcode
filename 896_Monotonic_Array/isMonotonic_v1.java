@@ -4,8 +4,8 @@ public class isMonotonic_v1{
 	
 	public static void main(String[] args){
 		
-		int[] A = {1, 2, 2, 3}; // true
-		//int[] A = {1, 3, 0}; // false
+		//int[] A = {1, 2, 2, 3}; // true
+		int[] A = {1, 3, 0}; // false
 		
 		/*
 		(1) 若是單調遞增/單調遞減的序列, 則 isIncreasing/isDecreasing 兩個狀態只會有一個成立
@@ -26,6 +26,12 @@ public class isMonotonic_v1{
 			if( A[i] - A[i-1] < 0 ){
 				
 				isDecreasing = true;
+				
+			}
+			
+			if ( isIncreasing & isDecreasing ){ // 如果兩個狀態都成立了, 直接 return false
+			
+				System.out.println( false );
 				
 			}
 			
