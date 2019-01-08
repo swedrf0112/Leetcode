@@ -21,9 +21,10 @@ for i in range(len(A)):
 '''
 
 sum_a, sum_b, set_b = sum(A), sum(B), set(B)
+diff = (sum_a - sub_b)/2
 
 for a in A:
-	target = int(a - (sum_a - sum_b)/2)
+	target = int(a - diff)
 	if target in set_b:
 		return [a, target]
 
