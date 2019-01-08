@@ -23,9 +23,9 @@ for i in range(len(A)):
 sum_a, sum_b, set_b = sum(A), sum(B), set(B)
 diff = (sum_a - sub_b)/2
 
-for a in A:
-	target = int(a - diff)
+for val in A:
+	target = int(val - diff)
 	if target in set_b:
-		return [a, target]
+		return [val, target]
 
 	
