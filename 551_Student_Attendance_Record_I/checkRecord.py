@@ -15,7 +15,7 @@ for i in range(len(s)):
     if s[i] == "L":
         l_conti_cnt += 1
         if l_conti_cnt > 2:
-        return False
+            return False
 
     else: 
         l_conti_cnt = 0 ## 如果字是"A"或"P", 連續的L count歸0
