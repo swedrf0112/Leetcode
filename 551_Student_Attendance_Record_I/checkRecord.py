@@ -12,16 +12,16 @@ a_cnt = 0
 l_conti_cnt = 0
 
 for i in range(len(s)):
-    if s[i] == "L":
-        l_conti_cnt += 1
+	if s[i] == "L":
+		l_conti_cnt += 1
 		if l_conti_cnt > 2:
 			return False
 
     else: 
-		l_conti_cnt = 0 ## 如果字是"A"或"P", 連續的L count歸0
-		if s[i] == "A":
-			a_cnt += 1
-			if a_cnt > 2:
-				return False
+        l_conti_cnt = 0 ## 如果字是"A"或"P", 連續的L count歸0
+        if s[i] == "A":
+            a_cnt += 1
+            if a_cnt > 2:
+                return False
 
 return True
