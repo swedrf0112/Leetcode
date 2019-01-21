@@ -50,4 +50,4 @@ if l2 == None:
         
 tailNode.next = l1 or l2 ## 與上面的寫法一致
         
-return headNode.next
+return headNode.next ## 為了初始化headNode物件, 因為第一個val是None, 所以return第二個開始的物件
