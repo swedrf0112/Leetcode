@@ -23,9 +23,9 @@ from collections import Counter
 nums_appear_times = Counter(nums) ## 使用collections.Counter()計算每個nums出現的次數
 
 if k < 0:
-	return 0
+    return 0
 elif k == 0:
-	return len(list(filter(lambda x: x > 1, nums_appear_times.values()))) ##找出nums中有那些數字出現超過1次
+    return len(list(filter(lambda x: x > 1, nums_appear_times.values()))) ##找出nums中有那些數字出現超過1次
 else:
     ## 遍歷nums中所有key值, 找出i+k有沒有在nums的key裡面, 有的話即為配對成功
     cnt = 0
